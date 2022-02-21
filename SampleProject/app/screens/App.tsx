@@ -3,9 +3,7 @@ import { SafeAreaView, View } from "react-native";
 import { Header, Card } from "../components";
 import styles from "../styles/screens/App"
 
-interface Props {}
-
-const App: FC<Props> = () => { // App은 Function Component 타입을 가진다
+const App: FC = () => { // App은 Function Component 타입을 가진다
     return (
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container}>
