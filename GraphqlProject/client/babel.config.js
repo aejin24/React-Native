@@ -22,6 +22,7 @@ module.exports = {
             "@screens": "./src/screens",
             "@assets": "./src/assets",
             "@graphql": "./src/graphql",
+            "@util": "./src/util",
           },
         },
       ],
