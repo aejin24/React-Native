@@ -1,0 +1,4 @@
+type Query {
+    # user query
+    getUser: [User]
+}

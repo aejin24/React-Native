@@ -1,0 +1,12 @@
+type User {
+    _id: String
+    email: String
+}
+
+input RegisterUserRequest {
+    email: String
+}
+
+type RegisterUserResponse {
+    email: String
+}
