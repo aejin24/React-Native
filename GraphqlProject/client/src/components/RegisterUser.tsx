@@ -6,7 +6,7 @@ import styles from "@assets/styles/UserCreate";
 import mutation from "@graphql/mutation";
 import { RegisterUserRequest } from "@interface/User";
 
-const UserCreate: FC = () => {
+const RegisterUser: FC = () => {
     const [newUser, setNewUser] = useState<string>("");
     const userInputHandler = (newUser: string) => {
         setNewUser(newUser);
@@ -50,4 +50,4 @@ const UserCreate: FC = () => {
     );
 }
 
-export default UserCreate;
+export default RegisterUser;
