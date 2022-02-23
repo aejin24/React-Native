@@ -23,8 +23,9 @@ module.exports = {
             "@assets": "./src/assets",
             "@graphql": "./src/graphql",
             "@util": "./src/util",
+            "@interface": "./src/interface"
           },
         },
       ],
-    ],
+    ]
 }
