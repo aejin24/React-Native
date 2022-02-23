@@ -32,7 +32,7 @@ const User: FC = () => {
             <UserCreate />
 
             <Text style={styles.title}>user list</Text>
-            
+
             <ScrollView>
                 {
                     data?.getUser.map(user => (
