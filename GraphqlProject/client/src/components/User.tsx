@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { SafeAreaView, ScrollView, Text, View } from "react-native";
+import { Image, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
 
 import styles from "@assets/styles/User";
@@ -9,7 +9,7 @@ import { RegisterUser } from ".";
 
 const User: FC = () => {
     // return 되는 object의 type과 넘겨주는 인자가 있다면 그 인자의 type을 그 다음에 작성한다
-    const { loading, error, data } = useQuery<UserData>(query.GET_USER);
+    const { loading, error, data, refetch } = useQuery<UserData>(query.GET_USER);
 
     if (loading) {
         return (
@@ -31,7 +31,12 @@ const User: FC = () => {
         <SafeAreaView>
             <RegisterUser />
 
-            <Text style={styles.title}>user list</Text>
+            <View style={styles.container}>
+                <Text style={styles.title}>user list</Text>
+                <TouchableOpacity onPress={() => refetch()}>
+                    <Image source={require("@assets/img/refresh.png")} style={styles.refreshBtn}/>
+                </TouchableOpacity>
+            </View>
 
             <ScrollView>
                 {

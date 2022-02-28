@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    container: {
+    info: {
         padding: 25,
         height: 100,
         borderBottomWidth: StyleSheet.hairlineWidth
@@ -10,8 +10,18 @@ export default StyleSheet.create({
         fontSize: 20
     },
     title : {
-        fontSize: 20,
-        borderBottomWidth: StyleSheet.hairlineWidth,
-        padding: 25
+        fontSize: 20
+    },
+    container: {
+        padding: 25,
+        display: "flex",
+        flexDirection: "row",
+        alignContent: "center",
+        borderBottomWidth: StyleSheet.hairlineWidth
+    },
+    refreshBtn: {
+        width: 30,
+        height: 30,
+        marginLeft: 25
     }
 });
