@@ -1,4 +1,4 @@
 type Mutation {
     # user mutation
-    registerUser(RegisterUserRequest: RegisterUserRequest): RegisterUserResponse
+    registerUser(RegisterUserRequest: RegisterUserRequest): User
 }

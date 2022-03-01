@@ -1,12 +1,8 @@
 type User {
-    _id: String
+    id: String
     email: String
 }
 
 input RegisterUserRequest {
-    email: String
-}
-
-type RegisterUserResponse {
     email: String
 }

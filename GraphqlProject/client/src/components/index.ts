@@ -1,2 +1,1 @@
-export { default as User } from "./User"
-export { default as RegisterUser } from "./RegisterUser"
+export { default as RootComponent } from "./RootComponent";

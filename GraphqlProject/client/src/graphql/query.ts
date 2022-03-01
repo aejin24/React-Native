@@ -4,7 +4,7 @@ export default {
     GET_USER: gql`
         query getUser {
             getUser {
-                _id
+                id
                 email
             }
         }
